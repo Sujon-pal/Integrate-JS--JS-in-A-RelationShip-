@@ -36,3 +36,33 @@ cssTitle.style.color = 'red';
 // cssTitle.style.fontSize = '30px';
 // cssTitle.style.backgroundColor = 'yellow';
 console.log(cssTitle.innerText)
+
+
+
+//  Change color of CSS title <h1>
+let cssTitle1 = document.querySelector('#css-title');
+cssTitle1.style.color = 'green';
+cssTitle.style.fontSize = '30px';
+
+//  Highlight all CSS topics <li>
+let cssTopics = document.querySelectorAll('.css-topic');
+cssTopics.forEach(li => {
+    li.style.color = 'red';
+    li.style.fontWeight = 'bold';
+});
+
+//  Change color of JavaScript <li> containing "DOM"
+let jsLi = document.querySelectorAll('#js-title + ul li');
+jsLi.forEach(li => {
+    if(li.innerText === 'DOM'){
+        li.style.color = 'green';
+        li.style.fontSize = '20px';
+    }
+});
+
+//  Log all HTML topics <li>
+let htmlLi = document.querySelectorAll('.html-title + ul li');
+htmlLi.forEach(li => console.log(li.innerText));
+
+
+
