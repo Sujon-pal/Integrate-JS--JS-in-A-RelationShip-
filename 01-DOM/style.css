@@ -8,3 +8,11 @@ ul > li{
     font-size: larger;
 }
 
+
+.text-color{
+    color: chartreuse;
+}
+
+.text-size{
+    font-size: 3rem;
+}

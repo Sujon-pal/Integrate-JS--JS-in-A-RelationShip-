@@ -26,3 +26,16 @@ for (let section of sections) {
   section.style.borderRadius = "20px";
   section.style.padding = "10px";
 }
+
+
+let section = document.getElementById('js-title');
+section.classList.add('text-color');
+section.classList.remove('text-size') // remove text size in css class
+
+// 📌📌📌 25-7 NodeList, htmlcollection, parentNode, childnodes, createElement
+
+
+
+
+
+
