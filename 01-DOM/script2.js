@@ -19,17 +19,17 @@ let cssText = css.innerHTML;
 
 // 📌📌📌 25-6 Styling dom properties, add and remove css class using JS
 
-let sections = document.querySelectorAll("section");
-for (let section of sections) {
+let sections2 = document.querySelectorAll("section");
+for (let section of sections2) {
   section.style.border = "2px solid red";
   section.style.marginBottom = "10px";
   section.style.borderRadius = "20px";
   section.style.padding = "10px";
 }
 
-let section = document.getElementById("js-title");
-section.classList.add("text-color");
-section.classList.remove("text-size"); // remove text size in css class
+let section123 = document.getElementById("js-title");
+section123.classList.add("text-color");
+section123.classList.remove("text-size"); // remove text size in css class
 
 // 📌📌📌 25-7 NodeList, htmlcollection, parentNode, childnodes, createElement
 

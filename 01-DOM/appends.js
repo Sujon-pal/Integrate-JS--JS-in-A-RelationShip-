@@ -33,11 +33,11 @@ let ul = document.createElement('ul');
 
 // create li item 
 let skills = [ 'HTML','CSS','JS','REACT'];
-
+console.log('asdasdfasdf======>', skills)
 for(let skill of skills){
-    let li = document.createElement('li');
-    li.innerText = skill;
-    ul.appendChild(li)
+    let li = document.createElement('li');//create li item
+    li.innerText = skill; // add item
+    ul.appendChild(li) // push li item in ul
 }
 
 section.appendChild(ul)
