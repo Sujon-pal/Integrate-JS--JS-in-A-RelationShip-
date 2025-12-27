@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      h1 {
-        color: blue;
-        text-align: center;
+     <style>
+      .comment {
+        border: 3px solid blueviolet;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 30px;
+        background-color: antiquewhite;
+      }
+      textarea {
+        background-color: beige;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      button {
+        padding: 10px;
+        margin: 20px;
+        border-radius: 30px;
+        border: 1px solid blueviolet;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -33,7 +49,28 @@
     <input id="inputName" type="text" placeholder="Ener Your Name" />
     <button id="update-btn">Update Name</button>
 
+    <!-- 26-5 Create a comment box and display comment -->
+     <section>
+      <div id="comment-container">
+        <p class="comment">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, nihil
+          adipisci! Assumenda magnam at unde alias qui quas quo dignissimos?
+        </p>
+        <p class="comment">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, nihil
+          adipisci! Assumenda magnam at unde alias qui quas quo dignissimos?
+        </p>
+        <p class="comment">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, nihil
+          adipisci! Assumenda magnam at unde alias qui quas quo dignissimos?
+        </p>
+      </div>
+    </section>
+     <textarea name="" id="comment-text" cols="30" rows="5"></textarea> <br />
+    <button id="post-btn">Post Comment</button>
+
     <script src="onClickEvent.js"></script>
     <script src="addEventListener.js"></script>
+    <script src="commetn-Box.js"></script>
   </body>
 </html>
