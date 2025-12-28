@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Confirmation</title>
+  </head>
+  <body>
+    <h1 id="info">My Information</h1>
+
+    <input type="text" id="text-field" placeholder="type delete" />
+
+    <button id="btn" disabled>Delete</button>
+
+    <script>
+      const inputField = document.getElementById("text-field");
+      const deleteBtn = document.getElementById("btn");
+      const infoText = document.getElementById("info");
+
+      inputField.addEventListener("keyup", function (e) {
+        const text = e.target.value.toLowerCase();
+
+        if (text === "delete") {
+          deleteBtn.removeAttribute("disabled");
+          infoText.style.display = "none";
+        } else {
+          deleteBtn.setAttribute("disabled", true);
+          infoText.style.display = "";
+        }
+      });
+    </script>
+  </body>
+</html>
