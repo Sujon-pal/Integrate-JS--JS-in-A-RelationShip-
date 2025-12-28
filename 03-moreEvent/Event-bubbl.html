@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 2px solid red;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+      }
+      section {
+        border: 2px solid rgb(64, 4, 217);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+      }
+      ol {
+        border: 2px solid rgb(0, 105, 35);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+      }
+      li {
+        border: 2px solid rgb(0, 233, 58);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>26-7 (semi-advanced) Event bubble and Stop propagating</h1>
+    <section id="section">
+      Hello Developer
+
+      <ol id="item-list">
+        <li id="li1">Item-1</li>
+        <li id="li2">Item-2</li>
+        <li id="li3">Item-3</li>
+        <li id="li4">Item-4</li>
+      </ol>
+    </section>
+
+    <script>
+      document
+        .getElementById("li1")
+        .addEventListener("click", function (event) {
+          console.log("Click Item-1");
+          // event.stopPropagation();
+          event.stopImmediatePropagation();
+        });
+      document
+        .getElementById("li1")
+        .addEventListener("click", function (event) {
+          console.log("Click 2 Item-1");
+          
+        });
+      document
+        .getElementById("li1")
+        .addEventListener("click", function (event) {
+          console.log("Click 3 Item-1");
+      
+        });
+      document
+        .getElementById("item-list")
+        .addEventListener("click", function () {
+          console.log("Click item-list");
+        });
+      document.getElementById("section").addEventListener("click", function () {
+        console.log("Click section");
+      });
+    </script>
+  </body>
+</html>
