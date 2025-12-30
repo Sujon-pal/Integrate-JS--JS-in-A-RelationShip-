@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>26-8 (advanced) Event delegate and benefit of Event bubble</h1>
+    <section id="section">
+      Hello Developer
+
+      <ol id="item-list">
+        <li class="li">Item-1</li>
+        <li class="li">Item-2</li>
+        <li class="li">Item-3</li>
+        <li class="li">Item-4</li>
+      </ol>
+    </section>
+
+    <button id="add-btn">Add Item</button>
+
+    <script>
+      // const items = document.getElementsByClassName("li");
+      // for (let item of items) {
+      //   item.addEventListener("click", function (event) {
+      //     console.log(event.target.parentNode.removeChild(event.target));
+      //   });
+      // }
+
+      document
+        .getElementById("item-list")
+        .addEventListener("click", function (event) {
+          event.target.parentNode.removeChild(event.target)
+        });
+      // add new item
+      document.getElementById("add-btn").addEventListener("click", function () {
+        // parent to be added
+        const ol = document.getElementById("item-list");
+        //  new item
+        const li = document.createElement("li");
+        li.classList.add("li");
+        li.innerText = "New Item";
+
+        // add the item
+        ol.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
