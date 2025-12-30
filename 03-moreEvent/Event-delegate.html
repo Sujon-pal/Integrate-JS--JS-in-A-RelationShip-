@@ -21,6 +21,10 @@
     <button id="add-btn">Add Item</button>
 
     <script>
+
+      // ❌ প্রত্যেক child element-এ আলাদা event না বসিয়ে
+      // ✅ তাদের common parent-এ একটি event বসানো হয়
+
       // const items = document.getElementsByClassName("li");
       // for (let item of items) {
       //   item.addEventListener("click", function (event) {
@@ -31,7 +35,7 @@
       document
         .getElementById("item-list")
         .addEventListener("click", function (event) {
-          event.target.parentNode.removeChild(event.target)
+          event.target.parentNode.removeChild(event.target);
         });
       // add new item
       document.getElementById("add-btn").addEventListener("click", function () {

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>All about Events</h1>
+    <input id="input-text" type="text " placeholder="Enter Your Name" />
+    <button onclick="addName()">Add Name</button>
+
+    <section id="add-name-container"></section>
+    <script>
+      function addName() {
+        const textfild = document.getElementById("input-text");
+        const name = textfild.value;
+
+        let namecontainer = document.getElementById("add-name-container");
+
+        let h = document.createElement("h3");
+        h.innerText = name;
+
+        namecontainer.appendChild(h);
+        textfild.value = "";
+      }
+    </script>
+  </body>
+</html>
