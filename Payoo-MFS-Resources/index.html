@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body class="bg-slate-900 min-h-screen">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+      <header>
+        <nav class="flex items-center justify-center mt-12">
+          <div
+            class="relative flex items-center justify-center mt-12 w-9/12 -scroll-mb-10"
+          >
+            <img class="w-48 absolute" src="assets/bg.png" alt="" />
+            <img class="w-15" src="assets/Group.png" alt="" />
+          </div>
+        </nav>
+      </header>
+
+      <!-- Login Section -->
+      <section class="mt-14 flex justify-center items-center px-12">
+        <div class="bg-white w-full max-w-md rounded-xl shadow-lg p-6">
+          <form action="">
+            <div>
+              <label for="mobile" class="label">
+                <span class="text-black font-semibold">Mobile Number</span>
+              </label>
+              <input
+                id="mobile"
+                type="number"
+                required
+                placeholder="Enter mobile number"
+                class="bg-slate-200 text-black rounded-3xl py-1 px-2 placeholder:text-sm w-full"
+              />
+            </div>
+            <div>
+              <label for="pin" class="label">
+                <span class="text-black font-semibold text-sm"
+                  >4 Digit Pin</span
+                >
+              </label>
+              <input
+                id="Pin"
+                type="number"
+                required
+                placeholder="Enter 4 Digit Pin"
+                class="bg-slate-200 text-black rounded-3xl py-1 px-2 placeholder:text-sm w-full"
+              />
+            </div>
+            <button
+              id="login-btn"
+              class="mt-4 border-2 text-white bg-blue-600 w-full rounded-3xl py-2 hover:bg-transparent hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:font-semibold"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <script src="login.js"></script>
+  </body>
 </html>
