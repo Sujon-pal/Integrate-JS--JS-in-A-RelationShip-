@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Helllo developer</h1>
-</body>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body class="bg-slate-900 min-h-screen">
+    <!-- Main Section -->
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200 ">
+      <!-- Header -->
+      <header>
+        <nav class="flex items-center justify-between mx-3">
+          <div class="flex items-center justify-center">
+            <img class="w-14" src="assets/Group.png" alt="" />
+
+            <div>
+              <h1 class="font-bold text-black text-xl ">$45000</h1>
+              <p class="text-sm">Abailable Balance</p>
+            </div>
+          </div>
+          <button class="border-2 border-gray-400 rounded-lg py-2 px-3 text-gray-500 ">LogOut</button>
+        </nav>
+      </header>
+
+      <!-- Login Section -->
+      <section>
+        <div>
+          <form>
+            <!-- Button -->
+            <!-- <button id="login-btn"
+              class="mt-4 w-full rounded-3xl py-2
+              bg-blue-600 text-white border-2 border-blue-600
+              hover:bg-transparent hover:text-blue-600
+              hover:font-semibold transition duration-300"
+            >
+              Login
+            </button> -->
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
