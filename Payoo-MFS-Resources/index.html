@@ -17,51 +17,66 @@
   </head>
 
   <body class="bg-slate-900 min-h-screen">
+    <!-- Main Section -->
     <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+      
+      <!-- Header -->
       <header>
         <nav class="flex items-center justify-center mt-12">
           <div
-            class="relative flex items-center justify-center mt-12 w-9/12 -scroll-mb-10"
+            class="relative flex items-center justify-center
+            mt-20 sm:mt-28 lg:mt-12 w-9/12"
           >
-            <img class="w-48 absolute" src="assets/bg.png" alt="" />
-            <img class="w-15" src="assets/Group.png" alt="" />
+            <img class="w-40 sm:w-48 absolute" src="assets/bg.png" alt="" />
+            <img class="w-14 sm:w-15" src="assets/Group.png" alt="" />
           </div>
         </nav>
       </header>
 
       <!-- Login Section -->
-      <section class="mt-14 flex justify-center items-center px-12">
+      <section class="mt-10 flex justify-center items-center px-6 sm:px-12">
         <div class="bg-white w-full max-w-md rounded-xl shadow-lg p-6">
-          <form action="">
-            <div>
-              <label for="mobile" class="label">
-                <span class="text-black font-semibold">Mobile Number</span>
+          <form>
+            <!-- Acount Number -->
+            <div class="mb-4">
+              <label class="label">
+                <span class="text-black font-semibold">Acount Number</span>
               </label>
-              <input
-                id="mobile"
-                type="number"
+              <input 
+              id="acount-num"
+                type="text"
                 required
-                placeholder="Enter mobile number"
-                class="bg-slate-200 text-black rounded-3xl py-1 px-2 placeholder:text-sm w-full"
+                placeholder="Enter acount number"
+                class="bg-slate-200 text-black rounded-3xl py-2 px-4
+                placeholder:text-sm w-full
+                focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-            <div>
-              <label for="pin" class="label">
-                <span class="text-black font-semibold text-sm"
-                  >4 Digit Pin</span
-                >
+
+            <!-- PIN -->
+            <div class="mb-5">
+              <label class="label">
+                <span class="text-black font-semibold text-sm">
+                  4 Digit Pin
+                </span>
               </label>
               <input
-                id="Pin"
-                type="number"
+                type="password"
+               id="pin"
                 required
                 placeholder="Enter 4 Digit Pin"
-                class="bg-slate-200 text-black rounded-3xl py-1 px-2 placeholder:text-sm w-full"
+                class="bg-slate-200 text-black rounded-3xl py-2 px-4
+                placeholder:text-sm w-full
+                focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-            <button
-              id="login-btn"
-              class="mt-4 border-2 text-white bg-blue-600 w-full rounded-3xl py-2 hover:bg-transparent hover:text-blue-600 hover:border-2 hover:border-blue-600 hover:font-semibold"
+
+            <!-- Button -->
+            <button id="login-btn"
+              class="mt-4 w-full rounded-3xl py-2
+              bg-blue-600 text-white border-2 border-blue-600
+              hover:bg-transparent hover:text-blue-600
+              hover:font-semibold transition duration-300"
             >
               Login
             </button>
@@ -69,6 +84,7 @@
         </div>
       </section>
     </section>
+
     <script src="login.js"></script>
   </body>
 </html>
