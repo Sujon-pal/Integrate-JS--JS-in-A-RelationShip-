@@ -7,11 +7,11 @@ document
 
     if (acountNumber.length === 11) {
       if (pin === "1234") {
-        console.log("yes");
+        window.location.href = ('./main.html')
       } else {
-        console.log("no");
+        alert("Enter valid Password!")
       }
     } else {
-      console.log("Enter Valid Acount Number");
+      alert("Enter Valid Acount Number!");
     }
   });
