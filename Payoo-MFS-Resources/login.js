@@ -9,7 +9,7 @@ document
       if (pin === "1234") {
         window.location.href = ('./main.html')
       } else {
-        alert("Enter valid Password!")
+        alert("Enter valid pin!")
       }
     } else {
       alert("Enter Valid Acount Number!");
