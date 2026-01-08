@@ -36,6 +36,5 @@ completeButtons.forEach((button) => {
 
 // Clear history functionality
 clearBtn.addEventListener("click", () => {
-  // Remove all appended entries except the original paragraph text
    logContainer.innerHTML = '';
 });
