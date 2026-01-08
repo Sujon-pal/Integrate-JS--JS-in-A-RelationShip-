@@ -4,6 +4,8 @@ const completeButtons = document.querySelectorAll("#comp-Button");
 // Get the history container
 const historyContainer = document.getElementById("history");
 
+const logContainer = document.getElementById("log-entries");
+
 // Optional: get clear button
 const clearBtn = document.getElementById("clear");
 
@@ -27,7 +29,7 @@ completeButtons.forEach((button) => {
     entry.innerHTML = `You have Complete The Task <strong>${taskTitle}</strong>  ${getCurrentTime()}`;
 
     // Append to history container
-    historyContainer.appendChild(entry);
+    logContainer.appendChild(entry);
     
   });
 });
@@ -35,5 +37,5 @@ completeButtons.forEach((button) => {
 // Clear history functionality
 clearBtn.addEventListener("click", () => {
   // Remove all appended entries except the original paragraph text
-  historyContainer.innerHTML = '';
+   logContainer.innerHTML = '';
 });
